@@ -1,0 +1,94 @@
+.ft
+  background: $deepBlue
+  padding: 40px
+  padding-bottom: 60px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  .ft-col
+    padding: 0 20px
+
+  .ft-content
+    color: white
+    margin: 0
+    display: flex
+    height: 250px
+    flex-direction: column
+    justify-content: space-between
+    list-style: none
+
+    li
+      margin-bottom: 10px
+  a
+    color: white
+    text-decoration: none
+    white-space: pre
+    transition: .2s
+
+    &:hover
+      text-decoration: underline
+
+.ft-map
+  margin: 0  20px
+  width: 400px
+  height: 250px
+  border-radius: 20px
+  overflow: hidden
+
+  > a
+    white-space: normal
+
+.ft-title
+  text-transform: uppercase
+  font-size: 26px
+  font-weight: bold
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 120%
+    width: 50px
+    height: 3px
+    border-radius: 30px
+    background: white
+
+.ft-info
+  margin-top: 20px
+  word-wrap: pre
+  max-width: 230px
+  line-height: 30px
+
+@media (max-width: 1083px)
+  .ft
+    flex-direction: column
+    align-items: center
+    padding: 40px 20px
+    
+    .ft-content
+      height: 190px
+      text-align: center
+
+  .ft-info, .social-media
+    text-align: center
+
+  .ft-map
+    margin: 35px 0
+    max-width: 450px
+    width: 100%
+
+  .ft
+    padding-bottom: 100px
+
+.ft
+  position: relative
+
+.politics
+  color: white
+  position: absolute
+  bottom: 18px
+  left: 50%
+  text-align: center
+  transform: translateX(-50%)

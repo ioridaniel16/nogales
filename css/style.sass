@@ -1,0 +1,75 @@
+@import './_variables.sass'
+@import './_buttons.sass'
+@import './_fonts.sass'
+@import './_menu.sass'
+@import './_events.sass'
+@import './_news.sass'
+@import './_footer.sass'
+@import './_imageSlider.sass'
+@import './_accreditation.sass'
+@import './_newsSection.sass'
+@import './_altFooter.sass'
+@import './_newsletter.sass'
+@import './_publicaciones.sass'
+@import './_gallery.sass'
+@import './_escuela_padres.sass'
+
+html, body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  font-family: $latoFont
+  position: relative
+
+.spacer
+  width: 100px
+  height: 200vh
+
+.container
+  position: relative
+  padding: 50px 0
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+
+.cont-max
+  height: 400px
+
+.cont-center
+  display: flex
+  justify-content: center
+  align-items: flex-start 
+  max-width: 800px
+  margin: 0 auto
+
+.white-content
+  background: white
+
+p.message
+  text-justify: inter-word
+  text-align: justify
+  width: 40%
+  min-width: 250px
+  margin: 20px 25px
+  font-size: 14px
+  color: #939393
+  white-space: pre-line
+
+.image-message
+  width: auto
+  height: 300px
+
+h2
+  font-size: 28px
+  color: white
+  text-transform: uppercase
+
+@media (max-width: 760px)
+  .news-mobile
+    display: block
+
+@media (max-width: 680px)
+  .desktop
+    display: none

@@ -1,0 +1,70 @@
+.comunity
+  max-width: 900px
+  margin: 0 auto
+
+$heightOfItem: 50px
+
+.com-item
+  border-top: 1px solid $darkGreen
+  max-height: $heightOfItem
+  overflow: hidden
+  transition: .3s
+
+  &:last-child
+    border-bottom: 1px solid $darkGreen
+
+.com-title
+  height: $heightOfItem
+  line-height: $heightOfItem
+  color: lighten(black, 25%)
+  font-size: 19px
+  padding: 0 10px
+  position: relative
+
+.com-content 
+  .com-title
+    background: #ebebeb
+    color: $darkGreen
+
+  .com-item
+    border-bottom: 1px solid white
+    border-top: 1px solid white
+
+
+.btn-grow
+  right: 10px
+  top: 50%
+  width: 30px
+  height: 30px
+  transform: translateY(-50%)
+  position: absolute
+  cursor: pointer
+  transition: .2s
+
+  &:hover
+    fill: lighten($darkGreen, 5%)
+    width: 31px
+    height: 31px
+
+  svg
+    transition: .3s
+    fill: $darkGreen
+
+.com-content
+  padding: 10px
+  text-align: justify
+  color: lighten(black, 20%)
+
+.com-item-active
+  max-height: 1000px
+
+  > .com-title
+    background: $darkGreen
+    color: white
+
+    &:hover
+      background: lighten($darkGreen, 5%)
+
+    > .btn-grow > svg
+      fill: white
+      transform: rotate(180deg)

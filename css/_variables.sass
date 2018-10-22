@@ -1,0 +1,21 @@
+$titleGray: #808080
+$titleSize: 28px
+
+$darkGreen: #057548
+$deepBlue: #00376e
+
+=flexCenter($horizontal, $vertical)
+  display: flex
+  @if $horizontal == 1
+    justify-content: center
+
+  @if $vertical == 1
+    align-items: center
+
+=centerFlex($horizontal, $vertical)
+  @if $horizontal == 1
+    justify-content: center
+
+  @if $vertical == 1
+    align-items: center
+

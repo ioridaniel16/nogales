@@ -1,0 +1,48 @@
+.acr
+  padding: 35px 0
+
+  .acr-title
+    text-align: center
+    color: $titleGray
+    font-size: $titleSize
+    font-weight: bolder
+
+
+  .acr-content
+    margin-top: 10px
+    height: 150px
+    display: flex
+
+  .acr-images
+    width: 100%
+    overflow: hidden
+    display: flex
+    align-items: center
+
+  .acr-images-wrapper
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    transform: translateX(0)
+    transition: .3s
+
+    img
+      width: 120px
+      padding: 0 15px
+      height: auto
+  
+
+#acr-left-control, #acr-right-control
+  display: flex
+  align-items: center
+  padding: 0 3%
+  cursor: pointer
+  transform: scale(1)
+  transition: .3s
+
+  &:hover
+    transform: scale(1.1)
+
+  img
+    height: 35px    

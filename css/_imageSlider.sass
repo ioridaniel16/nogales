@@ -1,0 +1,206 @@
+.slider
+  max-width: 800px
+  margin: 30px auto
+  text-align: center
+
+.media-title
+  text-transform: uppercase
+  color: #808080
+  font-size: 18px
+  padding: 17px
+
+.slider-wrapper
+  overflow: hidden
+  margin: 0 auto
+  width: 800px
+  height: 150px
+
+  .slider-content
+    width: 100%
+    transition: .3s
+    transform: translateX(0)
+    display: flex
+    white-space: nowrap
+
+  .slider-item
+    position: relative
+    width: 180px
+    height: 150px
+    background: coral
+    margin: 0 10px
+    flex-shrink: 0
+
+    img
+      object-fit: cover
+      width: 100%
+      height: 100%
+
+.slider-control
+  padding: 10px 0
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+
+.slider-page
+  top: 100%
+  left: 50%
+  transform: translateX(-50%)
+  position: absolute
+  font-size: 14px
+  color: #979797
+
+.slider-button
+  margin: 3px
+  width: 10px
+  height: 10px
+  background: #979797
+  border-radius: 50%
+  cursor: pointer
+  transition: .3s
+
+  &:hover
+    background: #cacaca
+
+.slider-button-active
+  background: #cacaca
+
+.slider-item:hover > .media-outline
+  opacity: 1
+
+.media-outline
+  z-index: 2
+  width: 100%
+  height: 100%
+  box-sizing: border-box
+  position: absolute
+  padding: 5px 10px
+  top: 0
+  left: 0
+  opacity: 0
+  transition: .3s
+  background: rgba(0, 0, 0, .45)
+  color: white
+  text-align: left
+
+  .media-outline-title
+    font-size: 14px
+
+  .media-outline-date
+    font-size: 10px
+
+  .media-outline-likes
+    font-size: 10px
+
+  .media-info
+    display: inline-block
+    position: absolute
+    width: 100%
+    bottom: 3px
+
+    .media-likes-icon, .media-count, .media-comments-icon
+      display: inline-block
+      width: 13px
+      height: 13px
+      margin-right: 3px
+      font-size: 11px
+      line-height: 15px
+
+    .media-likes-icon
+      background: url('../img/Assets/Assets_desk/Assets/Recurso 9@3x.png')
+      background-size: cover
+
+    .media-comments-icon
+      background: url('../img/Assets/Assets_desk/Assets/Recurso 10@3x.png')
+      background-size: 100% 100%
+
+.squared-wrapper
+  height: 180px
+
+  .slider-item
+    height: 180px
+
+.large-wrapper
+  height: 200px
+
+  .slider-item
+    background: none
+    height: 200px
+
+.twitter-bubble
+  font-size: 12px
+  text-align: left
+  box-sizing: border-box
+  border-radius: 3px
+  width: 100%
+  height: 130px
+  background: #eee
+  color: #a6a6a6
+  padding: 8px 7px
+  position: relative
+  filter: drop-shadow(0 2px 1px rgba(black, .2))
+  white-space: pre-line
+
+  a
+    text-decoration: none
+    color: #7fb5e1
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 15%
+    width: 0
+    height: 0
+    border: 15px solid transparent
+    border-top-color: #eee
+    border-bottom: 0
+    border-left: 0
+    margin-left: -10.5px
+    margin-bottom: -15px
+
+  .twitter-time
+    bottom: 10px
+    position: absolute
+    font-size: 9px
+
+.twitter-account
+  position: absolute
+  bottom: 0px
+  width: 100%
+  display: flex
+  align-items: center
+  color: #929292
+
+  .tw-icon
+    width: 43px
+    height: 40px
+    paddi
+    background: url('../img/escudo.png') 
+    background-size: contain
+    background-repeat: no-repeat
+
+  .tw-info
+    display: flex
+    flex-direction: column
+    width: calc(100% - 43px)
+    padding: 5px
+    height: 40px
+    font-size: 11px
+
+    b
+      color: #7c7c7c
+
+
+
+@media (max-width: 800px)
+  .slider-wrapper
+    width: 600px
+
+@media (max-width: 600px)
+  .slider-wrapper
+    width: 400px
+    
+@media (max-width: 500px)
+  .slider-wrapper
+    width: 200px 

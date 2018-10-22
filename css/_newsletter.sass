@@ -1,0 +1,101 @@
+.content-button
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  &:nth-child(1)
+    border-bottom: 1px solid $darkGreen
+
+  .cb-content
+    padding: 15px 0
+    max-width: 700px
+
+  .cb-button
+    width: 150px
+    padding: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.btn-nw
+  border-radius: 30px
+  border: 2px solid  $deepBlue
+  padding: 5px 9px
+  padding-right: 12px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $deepBlue
+  cursor: pointer
+  position: relative
+  font-size: 14px
+
+  &:after
+    content: ''
+    position: absolute
+    border-radius: 30px
+    width: 0
+    height: calc(100% + 2px)
+    background: $deepBlue
+    z-index: -1
+    transition: .3s
+    width: 0
+
+  &:hover
+    color: white
+
+    &:after
+      width: calc(100% + 5px)
+
+    > .b-icon > svg
+      fill: white
+      
+
+  .b-icon
+    width: 25px
+    height: 25px
+
+    svg
+      fill: $deepBlue
+
+.ds-subtitle-big
+  color: $darkGreen
+  font-size: 20px
+  text-align: center
+  padding: 10px 0
+
+.advice
+  background: #e35e24
+  color: white
+  padding: 7px 15px
+  margin: 20px 0
+  font-style: oblique
+  text-align: center
+  white-space: pre-line
+
+.col-container
+  max-width: 900px
+  margin: 0 auto
+  display: flex
+
+  .col50
+    max-width:  450px
+
+.emph
+  display: inline
+  color: lighten($darkGreen, 5%)
+
+.ws-pre
+  white-space: pre-line
+
+@media (max-width: 950px)
+  .col-container
+    text-align: center
+    flex-wrap: wrap
+    .col50
+      max-width: 100%
+
+@media (max-width: 650px)
+  
+  .advice
+    margin-top: 0
